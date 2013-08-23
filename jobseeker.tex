@@ -1,0 +1,71 @@
+% =========================================================================
+% File Name: jobseeker.tex
+% This file are based on the business card template from Rice Uiversity
+%  see http://www.ece.rice.edu/gsc/bus_cards/bus_cards.html
+% =========================================================================
+%
+% EDIT THE FOLLOWING VARIABLES
+%
+\newcommand{\cname}{Tux Linux} % Your name here
+\newcommand{\ctitlea}{Official Mascot} % Your position here
+\newcommand{\ctitleb}{A penguin character, $10+$ years in IT} % Your forth keywords here
+\newcommand{\ctitlec}{} % A spare line, may be used for additional forth keywords
+\newcommand{\cadra}{C/C++, Perl, PHP, JavaScript, SQL} % Your skills, 1st line
+\newcommand{\cadrb}{Code optimisation and troobleshooting} % Your skills, 2nd line
+\newcommand{\cadrc}{Open Source, multithread and multiprocess} % Your skills, 3rd line
+\newcommand{\cadrd}{Sydney, NSW} % Your location
+\newcommand{\cphone}{99 6666 4444} % Your phone number
+\newcommand{\cemail}{tux@south.pole} % Your e-mail address
+\newcommand{\curla}{linkedin.com/in/TuxLinux} % Your on-line profile, e.g. in LinkedIn
+\newcommand{\curlb}{github.com/Tux.Linux} % Samples of your work
+\newcommand{\curlc}{kernel.org} % Your site or project
+%
+% END OF EDITABLE VARIABLES
+%
+\documentclass[11pt]{article}
+\usepackage[dvips]{graphicx}
+\usepackage{latexsym}
+\usepackage{times}
+\pagestyle{empty}
+\setlength{\textwidth}{18cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\marginparwidth}{0in}
+\setlength{\marginparsep}{0in}
+\setlength{\marginparpush}{0in}
+\setlength{\textheight}{260mm}
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0in}
+\setlength{\footskip}{0in}
+\setlength{\voffset}{-6.9mm}
+\setlength{\hoffset}{-18.4mm}
+\newcommand{\clogo}{\includegraphics[scale=0.3]{QR.eps}}
+\begin{document}
+\setlength{\unitlength}{1mm}
+\begin{picture}(180,260)(0,0)
+  \multiput(0,0)(0,52){5}{
+    \multiput(0,0)(90,0){2}{
+      \begin{picture}(90,52)(0,0)
+        \put(35,42){\large\cname}
+        \put(35,39){\textsc{\scriptsize\ctitlea}}
+        \put(35,36){\sc\scriptsize{\ctitleb}}
+        \put(35,33){\sc\scriptsize{\ctitlec}}
+        \put(35,29){\scriptsize \cadra}
+        \put(35,26){\scriptsize \cadrb}
+        \put(35,23){\scriptsize \cadrc}
+        \put(35,18){\scriptsize \cadrd}
+        \put(49,11){\scriptsize \curla}
+        \put(49,8){\scriptsize \curlb}
+        \put(49,5){\scriptsize \curlc}
+        \put(5,20){\clogo}
+        \put(5,8){\textsc{\scriptsize E-mail:}}
+        \put(16,8){\scriptsize \cemail}
+        \put(5,5){\textsc{\scriptsize Phone:}}
+        \put(16,5){\scriptsize \cphone}
+      \end{picture}}}
+\end{picture}
+\end{document}
+
+
