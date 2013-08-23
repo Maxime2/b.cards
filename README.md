@@ -1,10 +1,8 @@
-b.cards
-=======
-
 LaTeX business cards
 ====================
 
 These cards are based on a template created in Rice University
+
 See http://www.ece.rice.edu/gsc/bus_cards/bus_cards.html
 
 The layout is done for Business Essentials Business Cards,
@@ -18,6 +16,7 @@ To make these business cards you need make, latex and dvi2ps application be
 installed on your system.
 
 For Ubuntu or Debian you may execute the following command to install them:
+
    sudo apt-get install make latex dvi2ps
 
 
@@ -37,8 +36,13 @@ Make your cards
   If your need a job seeker card edit the jobseeker.tex file.
 - Create the QR.eps file with your QR code as described above.
 - make your cards with the command:
+
     make
+
 - print your cards using any .ps file view, e.g. evince:
+
     evince business.ps
+
 or
+
     evince jobseeker.ps
